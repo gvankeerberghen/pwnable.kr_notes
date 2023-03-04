@@ -6,6 +6,9 @@ unsigned long check_password(const char* p){
 	int i;
 	int res=0;
 	for(i=0; i<5; i++){
+    printf("\tres %lu\n", res);
+    printf("\ti %lu\n", i);
+    printf("\tip[i] %d\n", ip[i]);
 		res += ip[i];
 	}
 	return res;
@@ -22,7 +25,7 @@ int main(int argc, char* argv[]){
 	}
 
 	if(hashcode == check_password( argv[1] )){
-		system("/bin/cat flag");
+		// system("/bin/cat flag");
 		return 0;
 	}
 	else
