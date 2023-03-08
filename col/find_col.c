@@ -27,7 +27,7 @@ void right_pad(char *str) {
   }
 }
 
-unsigned long hashcode = 0x21DD09EC; // 568134124
+unsigned long hashcode = 0x21DD09EC; //  
 unsigned long check_password(const char* p){
 	int* ip = (int*)p;
 	int i;

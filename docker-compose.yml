@@ -1,0 +1,10 @@
+version: "3"
+services:
+  kali:
+    build: .
+    container_name: kali
+    tty: true
+    volumes:
+      - ./:/home/pwnable
+    security_opt:
+      - seccomp:unconfined

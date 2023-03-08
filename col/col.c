@@ -19,13 +19,18 @@ int main(int argc, char* argv[]){
 		printf("usage : %s [passcode]\n", argv[0]);
 		return 0;
 	}
+  printf("Received '%s' of length %d\n",argv[1],strlen(argv[1]));
+  printf("Received '%x' of length %d\n",argv[1],strlen(argv[1]));
 	if(strlen(argv[1]) != 20){
 		printf("passcode length should be 20 bytes\n");
+    printf("Received '%s' of length %d\n",argv[1],strlen(argv[1]));
+    printf("Received '%x' of length %d\n",argv[1],strlen(argv[1]));
 		return 0;
 	}
 
 	if(hashcode == check_password( argv[1] )){
 		// system("/bin/cat flag");
+    printf("Success");
 		return 0;
 	}
 	else
